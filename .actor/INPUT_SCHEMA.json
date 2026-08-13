@@ -1,0 +1,54 @@
+{
+  "title": "Goobike Japan Used Motorcycles Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchKeyword": {
+      "title": "検索キーワード",
+      "type": "string",
+      "description": "メーカー名・車種名を指定（例: ホンダ, CBR250RR）。空欄で全車種スキャン",
+      "prefill": "",
+      "editor": "textfield"
+    },
+    "statsMode": {
+      "title": "相場集計モード",
+      "type": "boolean",
+      "description": "trueでキーワード別の価格相場統計のみを返す（検索+集計APIモード）",
+      "default": false,
+      "editor": "checkbox"
+    },
+    "statsKeyword": {
+      "title": "集計キーワード",
+      "type": "string",
+      "description": "モデル名（例: CBR250RR）。このキーワードを含む車両のみを集計",
+      "prefill": "",
+      "editor": "textfield"
+    },
+    "maxItems": {
+      "title": "最大取得件数",
+      "type": "integer",
+      "description": "取得する最大台数",
+      "default": 100,
+      "minimum": 1,
+      "editor": "number"
+    },
+    "maxPages": {
+      "title": "最大ページ数",
+      "type": "integer",
+      "description": "巡回する最大ページ数",
+      "default": 5,
+      "minimum": 1,
+      "editor": "number"
+    },
+    "proxyConfiguration": {
+      "title": "Proxy設定",
+      "type": "object",
+      "editor": "proxy",
+      "description": "Apifyプロキシ設定（自動）",
+      "default": {
+        "useApifyProxy": true
+      }
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,119 @@
+{
+  "actorSpecification": 1,
+  "name": "goobike-motorcycle-scraper",
+  "title": "Goobike Japan Used Motorcycles — Nationwide Inventory",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "input": "./INPUT_SCHEMA.json",
+  "outputSchema": {
+    "actorOutputSchemaVersion": 1,
+    "title": "Goobike Used Motorcycles",
+    "description": "Used motorcycle listings from goobike.com (Japan)",
+    "type": "object",
+    "properties": {
+      "itemId": {
+        "title": "Item ID",
+        "type": "string",
+        "description": "Stock ID at goobike",
+        "template": "{{itemId}}"
+      },
+      "title": {
+        "title": "Title",
+        "type": "string",
+        "description": "Motorcycle model name",
+        "template": "{{title}}"
+      },
+      "maker": {
+        "title": "Maker",
+        "type": "string",
+        "description": "Motorcycle maker (Honda, Yamaha, etc.)",
+        "template": "{{maker}}"
+      },
+      "price": {
+        "title": "Price (JPY)",
+        "type": "string",
+        "description": "Total price in yen",
+        "template": "{{price}}"
+      },
+      "currency": {
+        "title": "Currency",
+        "type": "string",
+        "description": "JPY",
+        "template": "{{currency}}"
+      },
+      "imageUrl": {
+        "title": "Image URL",
+        "type": "string",
+        "description": "Motorcycle image URL",
+        "template": "{{imageUrl}}"
+      },
+      "detailUrl": {
+        "title": "Detail URL",
+        "type": "string",
+        "description": "Listing page URL",
+        "template": "{{detailUrl}}"
+      },
+      "year": {
+        "title": "Year",
+        "type": "string",
+        "description": "Model year",
+        "template": "{{year}}"
+      },
+      "displacement": {
+        "title": "Displacement",
+        "type": "string",
+        "description": "Engine displacement in cc",
+        "template": "{{displacement}}"
+      },
+      "mileage": {
+        "title": "Mileage",
+        "type": "string",
+        "description": "Mileage in km",
+        "template": "{{mileage}}"
+      },
+      "repairHistory": {
+        "title": "Repair History",
+        "type": "string",
+        "description": "Repair history status",
+        "template": "{{repairHistory}}"
+      },
+      "location": {
+        "title": "Location",
+        "type": "string",
+        "description": "Shop location (prefecture, city)",
+        "template": "{{location}}"
+      },
+      "shop": {
+        "title": "Shop",
+        "type": "string",
+        "description": "Dealer shop name",
+        "template": "{{shop}}"
+      },
+      "phone": {
+        "title": "Phone",
+        "type": "string",
+        "description": "Shop phone number",
+        "template": "{{phone}}"
+      },
+      "source": {
+        "title": "Source",
+        "type": "string",
+        "description": "goobike",
+        "template": "{{source}}"
+      },
+      "scrapedAt": {
+        "title": "Scraped At",
+        "type": "string",
+        "description": "Scrape timestamp",
+        "template": "{{scrapedAt}}"
+      }
+    },
+    "required": [
+      "itemId",
+      "title",
+      "price"
+    ]
+  }
+}
