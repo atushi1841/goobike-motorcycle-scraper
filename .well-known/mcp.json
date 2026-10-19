@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "japan-motorcycle-market-mcp": {
+      "name": "Japan Motorcycle Market MCP",
+      "type": "stdio",
+      "description": "MCP server wrapping goobike-motorcycle-scraper Apify actor.",
+      "command": "python3",
+      "args": [
+        "src/stdio_main.py"
+      ],
+      "repo": "https://github.com/atushi1841/goobike-motorcycle-scraper"
+    }
+  }
+}
