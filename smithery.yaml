@@ -1,0 +1,10 @@
+# Smithery.ai configuration
+description: "MCP server for Goobike Motorcycle Scraper. Apify actor: fruitful_quintessence/goobike-motorcycle-scraper"
+repositoryUrl: https://github.com/atushi1841/goobike-motorcycle-scraper
+startCommand:
+  type: stdio
+  commandFunction: |
+    (config) => ({
+      command: 'python3',
+      args: ['src/stdio_main.py']
+    })
