@@ -1,0 +1,16 @@
+{
+  "manifest_version": "0.4",
+  "name": "japan-motorcycle-market-mcp",
+  "display_name": "Japan Motorcycle Market MCP",
+  "version": "1.0.0",
+  "description": "Used motorcycles from goobike.com. 100K+ listings nationwide. Live data via Apify actor (fruitful_quintessence/goobike-motorcycle-scraper). Gumroad: https://atushi5.gumroad.com/l/kutuxe",
+  "author": {
+    "name": "Kensho Project",
+    "email": "atushi1841@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atushi1841/goobike-motorcycle-scraper"
+  },
+  "homepage": "https://github.com/atushi1841/goobike-motorcycle-scraper"
+}
