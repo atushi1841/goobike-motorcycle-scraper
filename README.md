@@ -75,3 +75,13 @@ Install via MCP: add to your MCP config:
 ```json
 {"mcpServers": {"japan-motorcycle-market-mcp": {"command": "python3", "args": ["src/stdio_main.py"]}}}
 ```
+
+## Smithery
+
+[![Smithery](https://smithery.ai/server/japan-motorcycle-market-mcp/badge)](https://smithery.ai/server/japan-motorcycle-market-mcp)
+
+Install via Smithery:
+
+```bash
+npx @smithery/cli install japan-motorcycle-market-mcp --client claude
+```
