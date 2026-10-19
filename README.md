@@ -62,3 +62,16 @@ Pay-per-event: small fee per result. Use `statsMode` to get aggregated price sta
 ## Changelog
 
 - **0.1** — Initial release: keyword search, full listing fields, stats mode.
+
+## MCP Server & Registry
+
+This scraper is also available as an MCP server for AI agents:
+
+- **MCP Registry**: `io.github.atushi1841/japan-motorcycle-market-mcp`
+- **Apify Store**: https://apify.com/fruitful_quintessence/goobike-motorcycle-scraper
+- **Gumroad**: https://atushi5.gumroad.com/l/kutuxe
+
+Install via MCP: add to your MCP config:
+```json
+{"mcpServers": {"japan-motorcycle-market-mcp": {"command": "python3", "args": ["src/stdio_main.py"]}}}
+```
